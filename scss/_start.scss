@@ -1,0 +1,47 @@
+@import '_props';
+
+.start {
+   padding: 130px 0;
+   background-image: url('../img/main-pic.png');
+   background-position: right;
+   background-repeat: no-repeat;
+
+      &__block {
+         max-width: 498px;
+      }
+
+		&__heading {
+         font-weight: 600;
+         font-size: 48px;
+         line-height: 60px;
+         color: $main;
+		}
+
+		&__paragraph {
+         font-size: 17px;
+         line-height: 28px;
+         color: $main;
+         margin-bottom: 45px;
+		}
+
+		&__link {
+         padding: 23px 37px;
+         background: #00ECD0;
+
+         font-weight: 500;
+         font-size: 17px;
+         line-height: 21px;
+         color: $main;
+         border-radius: 6px;
+         transition: all 0.35s ease-in-out;
+
+         &:hover {
+            background: lighten($color: #00ECD0, $amount: 7);
+            box-shadow: 0 0 10px darken($color: #00ECD0, $amount: 5);
+         }
+
+         &:active {
+            background: darken($color: #00ECD0, $amount: 2);
+         }
+		}
+}

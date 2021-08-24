@@ -1,0 +1,100 @@
+@import '_header';
+@import '_start';
+@import '_companies';
+@import '_features';
+@import '_media';
+
+/* General */
+
+@font-face {
+   font-family: 'Inter';
+   src: url('../fonts/Inter-Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Inter';
+   src: url('../fonts/Inter-Medium.woff') format('woff');
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Inter';
+   src: url('../fonts/Inter-SemiBold.woff') format('woff');
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Inter';
+   src: url('../fonts/Inter-Bold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+body {
+   font-family: 'Inter';
+
+   &::before {
+      content: '';
+      width: 766px;
+      height: 766px;
+      background: #FF523D;
+      opacity: 0.08;
+      filter: blur(150px);
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: -75px;
+      pointer-events: none;
+   }
+}
+
+
+
+li {
+   list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+.container {
+   max-width: 1170px;
+   padding: 0 215px;
+   margin: 0 auto;
+}
+
+.active {
+   display: flex;
+   flex-direction: column;
+   animation: animation;
+}
+
+.disable {
+   display: none;
+}
+
+.btn-click {
+   animation: slide 1000ms linear both;
+}
+
+@keyframes slide { 
+   0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 300, 0, 0, 1); }
+   4.2% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 135.218, 0, 0, 1); }
+   8.31% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 34.768, 0, 0, 1); }
+   12.51% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.646, 0, 0, 1); }
+   16.62% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -18.992, 0, 0, 1); }
+   27.73% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.855, 0, 0, 1); }
+   38.84% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.76, 0, 0, 1); }
+   61.06% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.03, 0, 0, 1); }
+   83.28% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.001, 0, 0, 1); }
+   100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+ }

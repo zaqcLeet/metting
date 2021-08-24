@@ -1,0 +1,64 @@
+@import '_props';
+
+.features {
+   margin-top: 130px;
+   padding-bottom: 200px;
+
+		&__top {
+         text-align: center;
+		}
+
+		&__heading {
+         font-weight: 600;
+         font-size: 48px;
+         line-height: 64px;
+         color: $main;
+         margin: 0;
+		}
+
+		&__desc {
+         font-size: 16px;
+         line-height: 30px;
+         color: $main;
+         margin-bottom: 48px;
+		}
+
+		&__main {
+         display: flex;
+         justify-content: space-between;
+		}
+
+		&__block {
+         max-width: 320px;
+		}
+
+		&__block-img {
+         width: 72px;
+         height: 72px;
+		}
+
+		&__block-heading {
+         font-weight: 600;
+         font-size: 24px;
+         line-height: 29px;
+         color: $main;
+		}
+
+		&__block-desc {
+         font-size: 16px;
+         line-height: 26px;
+         color: $main;
+         opacity: .7;
+		}
+
+		&__block-link {
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 16px;
+         color: $main;
+
+         &:hover {
+            text-decoration: underline;
+         }
+		}
+}

@@ -1,0 +1,75 @@
+@import '_props';
+
+.header-container {
+   max-width: 1400px;
+   margin: 0 auto;
+   padding: 30px 100px;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+
+		&__logo {
+         margin-right: 110px;
+		}
+
+		&__list {
+         display: flex;
+         margin: 0;
+         padding: 0;
+		}
+
+		&__list-item {
+         font-size: 18px;
+         line-height: 20px;
+         color: $main;
+
+         &:not(:last-child) {
+            margin-right: 50px;
+         }
+
+         &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+         }
+		}
+
+		&__links {
+         display: flex;
+         margin-left: auto;
+         align-items: center;
+		}
+
+		&__link-a {
+         margin-right: 45px;
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 20px;
+         color: $main;
+
+         &:hover {
+            text-decoration: underline;
+         }
+		}
+
+		&__link-btn {
+         padding: 16px 27px;
+         outline: none;
+         border: none;
+         border-radius: 6px;
+         background: $main;
+         color: #fff;
+         transition: all 0.25s ease-in-out;
+
+         &:hover {
+            cursor: pointer;
+            background: lighten($color: $main, $amount: 15);
+            box-shadow: 0 0 5px $main;
+         }
+
+         &:active {
+            background: darken($color: $main, $amount: 5);
+         }
+		}
+}

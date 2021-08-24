@@ -1,0 +1,70 @@
+@import '_props';
+
+.companies {
+   display: flex;
+   flex-direction: column;
+   margin-top: 100px;
+
+      &__top {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+      }
+
+		&__left {
+         display: flex;
+		}
+
+		&__text {
+         font-weight: 600;
+         font-size: 36px;
+         line-height: 50px;
+         color: $main;
+         max-width: 494px;
+		}
+
+		&__right {
+         display: flex;
+         margin-left: auto;
+		}
+
+		&__right-block {
+
+         &:first-child {
+            margin-right: 90px;
+         }
+		}
+
+		&__right-heading {
+         font-size: 60px;
+         font-weight: 700;
+         line-height: 70px;
+         letter-spacing: -1px;
+         color: $main;      
+		}
+
+		&__right-icons {
+         margin-top: 10px;
+		}
+
+		&__right-icon {
+         width: 16px;
+         height: 14px;
+		}
+
+		&__right-desc {
+         font-size: 16px;
+         line-height: 28px;
+         color: $main;
+		}
+
+		&__bottom {
+         padding: 0 15px;
+		}
+
+		&__bottom-logo {
+         &:not(:last-child) {
+            margin-right: 80px;
+         }
+		}
+}
