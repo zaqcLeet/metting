@@ -226,3 +226,14 @@
       }
    }
 }
+
+
+@media screen and (max-width: 360px) {
+   .header {
+      &__links {
+         left: 32%;
+         top: 63%;
+         text-align: center;
+      }
+   }
+}
